@@ -35,13 +35,13 @@ angular.module('sails-angular.home', [])
 				'ver': 'v1.4',
 			},
 			{
-				'title': 'Bootstrap 3',
-				'image': '/images/bootstrap.png',
-				'info': 'Using the latest stable version of Bootstrap',
-				'ver': 'v3.3.2',
+				'title': 'Materialize',
+				'image': '/images/Materialize.png',
+				'info': 'Using the latest version of Materialize',
+				'ver': 'v0.97.0',
 			},
 			{
-				'title': 'Buit in Rest API',
+				'title': 'Rest API',
 				'info': 'Built in simple CRUD to start developing',
 			}
 		]

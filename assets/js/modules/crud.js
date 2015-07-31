@@ -49,8 +49,10 @@ angular.module('sails-angular.crud', [])
 	$scope.createEntry = function (){
 		CrudService.save($scope.createData, function(){
 			$state.go('crud');
+			Materialize.toast('Entry created!', 4000, 'green darken-1');
 		}, function(error){
 			$scope.error = error;
+			Materialize.toast('An error has occurred!', 4000, 'red darken-1');
 		});
 		
 	}
@@ -80,6 +82,9 @@ angular.module('sails-angular.crud', [])
 	$scope.updateEntry = function (){
 		CrudService.update({ id: $stateParams.id }, $scope.updateData, function(response){
 			$state.go('read', {id: response.id});
+			Materialize.toast('Entry updated!', 4000, 'red green-1');
+		}, function(error){
+			Materialize.toast('An error has occurred!', 4000, 'red darken-1');
 		});
 	}
 }])
@@ -87,6 +92,7 @@ angular.module('sails-angular.crud', [])
 .controller('DeleteController', ['$scope', '$state', 'CrudService', '$stateParams', function ($scope, $state, CrudService, $stateParams) {
 	CrudService.delete({ id: $stateParams.id }, function(){
 		$state.go('crud');
+		Materialize.toast('Entry deleted!', 4000, 'red darken-1');
 	});
 	
 }])

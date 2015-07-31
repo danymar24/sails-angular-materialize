@@ -1,8 +1,6 @@
 <div class="container">
-	<header class="jumbotron hero-spacer">
 	    <h1>{{entry.title}}</h1>
 	    <p>{{entry.text}}</p>
-	    <a ui-sref="update({id: entry.id})" class="btn btn-warning btn-large pull-right">Update</a>
-	    <a ui-sref="delete({id: entry.id})" class="btn btn-danger btn-large pull-right">Delete</a>
-	</header>
-</div>
+	    <a ui-sref="update({id: entry.id})" class="btn ">Update</a>
+	    <a ui-sref="delete({id: entry.id})" class="btn red darken-1">Delete</a>
+	</div>
