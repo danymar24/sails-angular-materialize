@@ -26,19 +26,19 @@ angular.module('sails-angular.home', [])
 				'title': 'Sails.Js',
 				'image': '/images/Sailsjs.png',
 				'info': 'Using the latest stable version of Sails.js',
-				'ver': 'v0.11.0',
+				'ver': 'v0.12.1',
 			},
 			{
 				'title': 'Angular.Js',
 				'image': '/images/AngularJS.png',
 				'info': 'Using the latest stable version of AngularJS',
-				'ver': 'v1.4',
+				'ver': 'v1.5',
 			},
 			{
 				'title': 'Materialize',
 				'image': '/images/Materialize.png',
 				'info': 'Using the latest version of Materialize',
-				'ver': 'v0.97.0',
+				'ver': 'v0.97.5',
 			},
 			{
 				'title': 'Rest API',
